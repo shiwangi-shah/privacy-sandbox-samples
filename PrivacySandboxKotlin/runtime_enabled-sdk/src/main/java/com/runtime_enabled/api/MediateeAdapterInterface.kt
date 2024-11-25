@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.api
+package com.runtime_enabled.api
 
 import android.os.Bundle
 import androidx.privacysandbox.activity.core.SdkActivityLauncher
@@ -38,7 +38,7 @@ interface MediateeAdapterInterface {
      * We return a Bundle here, not an interface that extends SandboxedUiAdapter, since a
      * PrivacySandboxInterface declared in one SDK cannot be implemented by another and returned
      * back.
-     * A PrivacySandboxInterface is expected to be implemented by the declaring SDK (example-sdk in
+     * A PrivacySandboxInterface is expected to be implemented by the declaring SDK (runtime_enabled-sdk in
      * this case) and a PrivacySandboxCallback is expected to be implemented by the consuming SDK
      * (adapter sdks).
      */

@@ -19,7 +19,7 @@ import android.content.Context
 import android.os.Bundle
 import androidx.privacysandbox.activity.core.SdkActivityLauncher
 import androidx.privacysandbox.ui.provider.toCoreLibInfo
-import com.example.api.MediateeAdapterInterface
+import com.runtime_enabled.api.MediateeAdapterInterface
 import com.mediatee.api.FullscreenAd
 import com.mediatee.api.SdkService
 

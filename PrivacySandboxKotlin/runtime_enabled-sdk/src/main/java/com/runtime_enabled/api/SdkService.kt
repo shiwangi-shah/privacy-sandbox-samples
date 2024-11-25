@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.api
+package com.runtime_enabled.api
 
 import androidx.privacysandbox.tools.PrivacySandboxService
 

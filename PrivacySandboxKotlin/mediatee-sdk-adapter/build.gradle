@@ -47,7 +47,7 @@ android {
 }
 
 dependencies {
-    debugImplementation project(":example-sdk-bundle")
+    debugImplementation project(":runtime_enabled-sdk-bundle")
     debugImplementation project(":mediatee-sdk-bundle")
 
     implementation 'androidx.activity:activity-ktx:1.9.0'

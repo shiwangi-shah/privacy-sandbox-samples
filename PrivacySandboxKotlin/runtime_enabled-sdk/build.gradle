@@ -19,7 +19,7 @@ plugins {
 }
 
 android {
-    namespace "com.example"
+    namespace "com.runtime_enabled"
 
     defaultConfig {
         minSdk 21

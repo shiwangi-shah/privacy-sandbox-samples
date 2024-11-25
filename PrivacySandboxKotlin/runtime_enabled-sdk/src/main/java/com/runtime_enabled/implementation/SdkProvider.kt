@@ -13,14 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.implementation
+package com.runtime_enabled.implementation
 
 import android.content.Context
 import android.os.Bundle
 import androidx.privacysandbox.sdkruntime.core.SandboxedSdkCompat
 import androidx.privacysandbox.sdkruntime.core.controller.SdkSandboxControllerCompat
-import com.example.api.AbstractSandboxedSdkProviderCompat
-import com.example.api.SdkService
+import com.runtime_enabled.api.AbstractSandboxedSdkProviderCompat
+import com.runtime_enabled.api.SdkService
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

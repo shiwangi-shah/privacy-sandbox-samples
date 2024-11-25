@@ -24,7 +24,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.privacysandbox.activity.client.createSdkActivityLauncher
 import androidx.privacysandbox.ui.client.view.SandboxedSdkView
 import androidx.privacysandbox.ui.core.SandboxedUiAdapter
-import com.example.api.SdkBannerRequest
+import com.runtime_enabled.api.SdkBannerRequest
 
 class BannerAd(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs) {
 

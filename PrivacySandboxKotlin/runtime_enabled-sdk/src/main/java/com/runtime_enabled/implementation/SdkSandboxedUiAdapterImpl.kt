@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.implementation
+package com.runtime_enabled.implementation
 
 import android.content.Context
 import android.content.res.Configuration
@@ -29,9 +29,9 @@ import androidx.privacysandbox.sdkruntime.core.controller.SdkSandboxControllerCo
 import androidx.privacysandbox.ui.client.view.SandboxedSdkView
 import androidx.privacysandbox.ui.core.SandboxedUiAdapter
 import androidx.privacysandbox.ui.provider.AbstractSandboxedUiAdapter
-import com.example.R
-import com.example.api.SdkBannerRequest
-import com.example.api.SdkSandboxedUiAdapter
+import com.runtime_enabled.R
+import com.runtime_enabled.api.SdkBannerRequest
+import com.runtime_enabled.api.SdkSandboxedUiAdapter
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.asCoroutineDispatcher
@@ -113,7 +113,7 @@ private class SdkUiSession(
 
     private fun getAdView() : View {
         if (mediateeSandboxedUiAdapter != null) {
-            // The Mediator (example-sdk) view contains a SandboxedSdkView that is being populated
+            // The Mediator (runtime_enabled-sdk) view contains a SandboxedSdkView that is being populated
             // with the ad view from the Runtime enabled Mediatee, which runs in the same process
             // as the Mediator. The view also has an overlay from the Mediator sdk. This will be
             // sent to the Publisher as a SandboxedUiAdapter by the Mediator.

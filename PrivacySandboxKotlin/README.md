@@ -20,13 +20,13 @@ compatible with your custom interfaces. To use it just extend `AbstractSandboxed
 it will be generated in the same package that defined the `@PrivacySandboxService` interface.
 
 ## Running the Sample
-The sample contains a working SDK in the `example-sdk` module. The SDK is bundled for release and
-app consumption in the `example-sdk-bundle` module, this is where the SDK version, package name and
+The sample contains a working SDK in the `runtime_enabled-sdk` module. The SDK is bundled for release and
+app consumption in the `runtime_enabled-sdk-bundle` module, this is where the SDK version, package name and
 signing information is defined.
 
 The client app is implemented in the `client-app` module. The `existing-sdk` module represents a
 modified version of a regular SDK that runs in the app as usual but is also capable of loading and
-interacting with the example SDK.
+interacting with the runtime_enabled SDK.
 
 There are two methods for building and installing the SDK. The preferred option is use Android
 Studio's UI to handle building and deploying the SDK and launching the client app. However, it is
@@ -46,7 +46,7 @@ adb shell device_config put adservices sdksandbox_customized_sdk_context_enabled
 ### Launch sample from the UI
 In Android Studio, edit your run configuration as follows:
 Edit run configurations > client-app > Deploy > APK from app bundle. Then, under Launch Options,
-Launch > Specified Activity > Activity > `com.example.client.MainActivity`
+Launch > Specified Activity > Activity > `com.runtime_enabled.client.MainActivity`
 
 Press the run button. Your app should launch and you can proceed to the
 [Testing the client](#testing-the-client) section.

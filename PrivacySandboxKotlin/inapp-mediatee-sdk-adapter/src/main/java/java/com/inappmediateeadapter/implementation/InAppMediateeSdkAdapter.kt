@@ -4,7 +4,7 @@ import android.content.Context
 import android.os.Bundle
 import androidx.privacysandbox.activity.core.SdkActivityLauncher
 import com.inappmediatee.sdk.InAppMediateeSdk
-import com.example.api.MediateeAdapterInterface
+import com.runtime_enabled.api.MediateeAdapterInterface
 
 /**
  * Adapter class that implements the interface declared by the Mediator.

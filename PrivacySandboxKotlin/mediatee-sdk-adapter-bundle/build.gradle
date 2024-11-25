@@ -38,6 +38,6 @@ android {
 
 dependencies {
     include project(":mediatee-sdk-adapter")
-    requiredSdk project(":example-sdk-bundle")
+    requiredSdk project(":runtime_enabled-sdk-bundle")
     requiredSdk project(":mediatee-sdk-bundle")
 }

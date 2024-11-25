@@ -33,8 +33,8 @@ dependencyResolutionManagement {
 
 rootProject.name = "PrivacySandboxSample"
 include ':client-app'
-include ':example-sdk'
-include ':example-sdk-bundle'
+include ':runtime_enabled-sdk'
+include ':runtime_enabled-sdk-bundle'
 include ':inapp-mediatee-sdk'
 include ':inapp-mediatee-sdk-adapter'
 include ':mediatee-sdk'

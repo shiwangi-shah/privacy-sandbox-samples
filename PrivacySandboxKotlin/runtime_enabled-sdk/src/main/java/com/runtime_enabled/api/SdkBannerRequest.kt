@@ -13,12 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.api
+package com.runtime_enabled.api
 
+import androidx.privacysandbox.tools.PrivacySandboxValue
 import androidx.privacysandbox.activity.core.SdkActivityLauncher
-import androidx.privacysandbox.tools.PrivacySandboxInterface
 
-@PrivacySandboxInterface
-interface FullscreenAd {
-    suspend fun show(activityLauncher: SdkActivityLauncher)
-}
+@PrivacySandboxValue
+data class SdkBannerRequest(
+    /** The package name of the app. */
+    val appPackageName: String,
+    /**
+     *  An [SdkActivityLauncher] that will be used to launch an activity when the banner is clicked.
+     */
+    val activityLauncher: SdkActivityLauncher,
+    /**
+     * Denotes if a WebView banner ad needs to be loaded.
+     */
+    val isWebViewBannerAd: Boolean
+)

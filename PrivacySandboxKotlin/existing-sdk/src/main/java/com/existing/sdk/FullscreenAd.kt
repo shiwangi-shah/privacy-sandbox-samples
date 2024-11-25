@@ -20,7 +20,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.privacysandbox.activity.client.createSdkActivityLauncher
 import androidx.privacysandbox.activity.core.SdkActivityLauncher
-import com.example.api.FullscreenAd
+import com.runtime_enabled.api.FullscreenAd
 
 class FullscreenAd(private val sdkFullscreenAd: FullscreenAd) {
     suspend fun show(baseActivity: AppCompatActivity, allowSdkActivityLaunch: () -> Boolean) {

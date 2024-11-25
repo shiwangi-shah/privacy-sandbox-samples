@@ -46,7 +46,7 @@ android {
 }
 
 dependencies {
-    debugImplementation project(':example-sdk-bundle')
+    debugImplementation project(':runtime_enabled-sdk-bundle')
     implementation project(':inapp-mediatee-sdk')
 
     implementation 'androidx.privacysandbox.activity:activity-core:1.0.0-alpha01'

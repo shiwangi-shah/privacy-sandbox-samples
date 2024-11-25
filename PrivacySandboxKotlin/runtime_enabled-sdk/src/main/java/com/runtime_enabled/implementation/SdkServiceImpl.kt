@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.implementation
+package com.runtime_enabled.implementation
 
 import android.content.Context
 import android.os.Bundle
 import android.os.RemoteException
 import android.util.Log
 import androidx.privacysandbox.ui.client.SandboxedUiAdapterFactory
-import com.example.R
-import com.example.api.FullscreenAd
-import com.example.api.SdkBannerRequest
-import com.example.api.SdkService
+import com.runtime_enabled.R
+import com.runtime_enabled.api.FullscreenAd
+import com.runtime_enabled.api.SdkBannerRequest
+import com.runtime_enabled.api.SdkService
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import java.io.File
@@ -33,8 +33,8 @@ import androidx.privacysandbox.ui.core.SandboxedSdkViewUiInfo
 import androidx.privacysandbox.ui.core.SessionObserver
 import androidx.privacysandbox.ui.core.SessionObserverContext
 import androidx.privacysandbox.ui.core.SessionObserverFactory
-import com.example.api.MediateeAdapterInterface
-import com.example.api.SdkSandboxedUiAdapter
+import com.runtime_enabled.api.MediateeAdapterInterface
+import com.runtime_enabled.api.SdkSandboxedUiAdapter
 
 class SdkServiceImpl(private val context: Context) : SdkService {
     override suspend fun getMessage(): String = "Hello from Privacy Sandbox!"
@@ -42,7 +42,7 @@ class SdkServiceImpl(private val context: Context) : SdkService {
     private var inAppMediateeAdapter: MediateeAdapterInterface? = null
     private var mediateeAdapter: MediateeAdapterInterface? = null
   
-    private val tag = "ExampleSdk"
+    private val tag = "RuntimeEnabledSDK"
 
     override suspend fun createFile(sizeInMb: Int): String {
         val path = Paths.get(

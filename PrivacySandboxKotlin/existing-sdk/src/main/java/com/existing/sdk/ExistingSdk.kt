@@ -20,8 +20,8 @@ import android.os.Bundle
 import android.util.Log
 import androidx.privacysandbox.sdkruntime.client.SdkSandboxManagerCompat
 import androidx.privacysandbox.sdkruntime.core.LoadSdkCompatException
-import com.example.api.SdkService
-import com.example.api.SdkServiceFactory
+import com.runtime_enabled.api.SdkService
+import com.runtime_enabled.api.SdkServiceFactory
 import com.inappmediateeadapter.implementation.InAppMediateeSdkAdapter
 
 class ExistingSdk(private val context: Context) {
@@ -62,9 +62,9 @@ class ExistingSdk(private val context: Context) {
         /**
          * Name of the SDK to be loaded.
          *
-         * (needs to be the one defined in example-sdk-bundle/build.gradle)
+         * (needs to be the one defined in runtime_enabled-sdk-bundle/build.gradle)
          */
-        private const val SDK_NAME = "com.example.sdk"
+        private const val SDK_NAME = "com.runtime_enabled.sdk"
 
         private var remoteInstance: SdkService? = null
 

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.implementation
+package com.runtime_enabled.implementation
 
 import android.content.Context
 import android.os.Build
@@ -30,9 +30,9 @@ import androidx.privacysandbox.activity.core.SdkActivityLauncher
 import androidx.privacysandbox.sdkruntime.core.activity.ActivityHolder
 import androidx.privacysandbox.sdkruntime.core.activity.SdkSandboxActivityHandlerCompat
 import androidx.privacysandbox.sdkruntime.core.controller.SdkSandboxControllerCompat
-import com.example.R
-import com.example.api.FullscreenAd
-import com.example.api.MediateeAdapterInterface
+import com.runtime_enabled.R
+import com.runtime_enabled.api.FullscreenAd
+import com.runtime_enabled.api.MediateeAdapterInterface
 
 class FullscreenAdImpl(private val sdkContext: Context,
                        private val adapter: MediateeAdapterInterface?,
