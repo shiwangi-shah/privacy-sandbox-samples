@@ -24,7 +24,7 @@ The sample contains a working SDK in the `runtime_enabled-sdk` module. The SDK i
 app consumption in the `runtime_enabled-sdk-bundle` module, this is where the SDK version, package name and
 signing information is defined.
 
-The client app is implemented in the `client-app` module. The `existing-sdk` module represents a
+The client app is implemented in the `client-app` module. The `runtime_aware-sdk` module represents a
 modified version of a regular SDK that runs in the app as usual but is also capable of loading and
 interacting with the runtime_enabled SDK.
 

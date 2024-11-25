@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.existing.sdk
+package com.runtime_aware.sdk
 
 import android.content.Context
 import android.os.Bundle
@@ -24,7 +24,7 @@ import com.runtime_enabled.api.SdkService
 import com.runtime_enabled.api.SdkServiceFactory
 import com.inappmediateeadapter.implementation.InAppMediateeSdkAdapter
 
-class ExistingSdk(private val context: Context) {
+class RASdk(private val context: Context) {
 
     /**
      * Initialize the SDK and In-App adapters. If the SDK failed to initialize, return false, else
@@ -57,7 +57,7 @@ class ExistingSdk(private val context: Context) {
     /** Keeps a reference to a sandboxed SDK and makes sure it's only loaded once. */
     internal companion object Loader {
 
-        private const val TAG = "ExistingSdk"
+        private const val TAG = "RASdk"
 
         /**
          * Name of the SDK to be loaded.

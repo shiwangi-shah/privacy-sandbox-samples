@@ -53,8 +53,8 @@ android {
 }
 
 dependencies {
+    implementation project(':runtime_aware-sdk')
     // Depend on the SDK library that will run inside the app.
-    implementation project(':existing-sdk')
 
     implementation "androidx.appcompat:appcompat:1.6.1"
     implementation "com.google.android.material:material:1.9.0"

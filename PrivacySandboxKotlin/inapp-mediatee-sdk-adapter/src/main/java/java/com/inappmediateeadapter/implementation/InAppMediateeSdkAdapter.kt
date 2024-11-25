@@ -9,7 +9,7 @@ import com.runtime_enabled.api.MediateeAdapterInterface
 /**
  * Adapter class that implements the interface declared by the Mediator.
  *
- * This is loaded by and registered with Mediator from existing-sdk (RA_SDK).
+ * This is loaded by and registered with Mediator from runtime_aware-sdk (RA_SDK).
  */
 class InAppMediateeSdkAdapter(private val context: Context): MediateeAdapterInterface {
 

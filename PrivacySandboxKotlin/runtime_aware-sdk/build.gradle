@@ -20,7 +20,7 @@ plugins {
 
 // A standard android library that uses a Runtime-enabled Ad library to show "ads".
 android {
-    namespace 'com.existing.sdk'
+    namespace 'com.runtime_aware.sdk'
     privacySandbox {
         enable = true
     }

@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.existing.sdk
+package com.runtime_aware.sdk
 
 import android.content.Context
 import android.util.AttributeSet
@@ -29,7 +29,7 @@ import com.runtime_enabled.api.SdkBannerRequest
 class BannerAd(context: Context, attrs: AttributeSet) : LinearLayout(context, attrs) {
 
     // This method could divert a percentage of requests to a sandboxed SDK and fallback to
-    // existing ad logic. For this example, we send all requests to the sandboxed SDK as long as it
+    // runtime_aware ad logic. For this example, we send all requests to the sandboxed SDK as long as it
     // exists.
     suspend fun loadAd(
         baseActivity: AppCompatActivity,
@@ -63,13 +63,13 @@ class BannerAd(context: Context, attrs: AttributeSet) : LinearLayout(context, at
         shouldLoadWebView: Boolean,
         mediationType: String
     ): SandboxedUiAdapter? {
-        if (!ExistingSdk.isSdkLoaded()) {
+        if (!RASdk.isSdkLoaded()) {
             return null
         }
 
         val launcher = baseActivity.createSdkActivityLauncher(allowSdkActivityLaunch)
         val request = SdkBannerRequest(message, launcher, shouldLoadWebView)
-        return ExistingSdk.loadSdkIfNeeded(context)?.getBanner(request, mediationType)
+        return RASdk.loadSdkIfNeeded(context)?.getBanner(request, mediationType)
     }
 
     private fun addViewToLayout(view: View) {

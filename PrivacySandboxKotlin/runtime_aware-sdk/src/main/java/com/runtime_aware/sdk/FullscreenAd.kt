@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.existing.sdk
+package com.runtime_aware.sdk
 
 import android.content.Context
 import android.content.Intent
@@ -30,15 +30,15 @@ class FullscreenAd(private val sdkFullscreenAd: FullscreenAd) {
 
     companion object {
         // This method could divert a percentage of requests to a sandboxed SDK and fallback to
-        // existing ad logic. For this example, we send all requests to the sandboxed SDK as long as
+        // runtime_aware ad logic. For this example, we send all requests to the sandboxed SDK as long as
         // it exists.
         suspend fun create(
             context: Context,
             mediationType: String
-        ): com.existing.sdk.FullscreenAd {
-            if (ExistingSdk.isSdkLoaded()) {
+        ): com.runtime_aware.sdk.FullscreenAd {
+            if (RASdk.isSdkLoaded()) {
                 val remoteFullscreenAd =
-                    ExistingSdk.loadSdkIfNeeded(context)?.getFullscreenAd(mediationType)
+                    RASdk.loadSdkIfNeeded(context)?.getFullscreenAd(mediationType)
                 if (remoteFullscreenAd != null)
                     return FullscreenAd(remoteFullscreenAd)
             }

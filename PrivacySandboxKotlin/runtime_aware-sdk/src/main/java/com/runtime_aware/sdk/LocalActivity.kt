@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.existing.sdk
+package com.runtime_aware.sdk
 
 import android.app.Activity
 import android.os.Bundle
